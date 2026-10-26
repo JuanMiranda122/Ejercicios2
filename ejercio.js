@@ -42,16 +42,48 @@
 // console.log(suma(1))
 
 
-// ejercicio 4 
+// // ejercicio 4 
 
-let frutas = ['pera', 'kiwi', 'mango', 'fresa'];
-let frutasInvertidas = [];
-
-
-for (let i = frutas.length - 1; i >= 0; i--) {
-  frutasInvertidas.push(frutas[i]);
-}
+// let frutas = ['pera', 'kiwi', 'mango', 'fresa'];
+// let frutasInvertidas = [];
 
 
-console.log(frutasInvertidas);
+// for (let i = frutas.length - 1; i >= 0; i--) {
+//   frutasInvertidas.push(frutas[i]);
+// }
+
+
+// console.log(frutasInvertidas);
+
+
+//ejercicio 5
+
+
+let horasRedesMundo = 2.7;
+let horasRedesColombia = 3.6;
+let diasAno = 365;
+
+
+
+
+
+let horasAnoColombia = horasRedesColombia * diasAno;
+
+let diasCompletosColombia = horasAnoColombia / 24;
+
+let semanasColombia = diasCompletosColombia / 7;
+
+
+let mesesColombia = diasCompletosColombia / 30;
+
+let diferenciaHorasDia = horasRedesColombia - horasRedesMundo;
+let diferenciaHorasAno = diferenciaHorasDia * diasAno;
+let diasAdicionalesAlAno = diferenciaHorasAno / 24;
+
+
+console.log("1. Horas acumuladas en Colombia al año:", horasAnoColombia, "horas.");
+console.log("2. Equivalencia en días completos (24h):", diasCompletosColombia, "días.");
+console.log("3. Equivalencia en semanas:", semanasColombia.toFixed(2), "semanas.");
+console.log("4. Equivalencia en meses de 30 días:", mesesColombia, "meses.");
+console.log("5. Días completos adicionales al año frente al promedio mundial:", diasAdicionalesAlAno.toFixed(2), "días.");
 
