@@ -33,10 +33,25 @@
 // ejercico 3 
 
 
-function suma(...n){
-     return n.reduce((acumulado, actual) => acumulado + actual, 0);
+// function suma(...n){
+//      return n.reduce((acumulado, actual) => acumulado + actual, 0);
+// }
+
+// console.log(suma(1, 2, 3))
+// console.log(suma(1, 10))
+// console.log(suma(1))
+
+
+// ejercicio 4 
+
+let frutas = ['pera', 'kiwi', 'mango', 'fresa'];
+let frutasInvertidas = [];
+
+
+for (let i = frutas.length - 1; i >= 0; i--) {
+  frutasInvertidas.push(frutas[i]);
 }
 
-console.log(suma(1, 2, 3))
-console.log(suma(1, 10))
-console.log(suma(1))
+
+console.log(frutasInvertidas);
+
