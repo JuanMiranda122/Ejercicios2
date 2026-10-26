@@ -19,11 +19,24 @@
 
 // ejercico 2
 
-let numero = 7;
-let resultado = []
+// let numero = 7;
+// let resultado = []
 
-for (let i = 0; i < 11 ; i++) {
+// for (let i = 0; i < 11 ; i++) {
 
-    resultado.push(numero + ' x ' + i + ' = ' + numero * i)
+//     resultado.push(numero + ' x ' + i + ' = ' + numero * i)
     
-}console.log(resultado)
+// }
+
+// console.log(resultado)
+
+// ejercico 3 
+
+
+function suma(...n){
+     return n.reduce((acumulado, actual) => acumulado + actual, 0);
+}
+
+console.log(suma(1, 2, 3))
+console.log(suma(1, 10))
+console.log(suma(1))
